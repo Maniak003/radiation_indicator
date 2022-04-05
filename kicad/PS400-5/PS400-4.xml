@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/ed/work/kicad/PS400-4/PS400-4.sch</source>
+    <date>Пт 17 дек 2021 17:40:11</date>
+    <tool>Eeschema 5.1.9+dfsg1-1~bpo10+1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>PS400-4.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>PIC10F206-IOT</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/41239D.pdf</datasheet>
+      <libsource lib="MCU_Microchip_PIC10" part="PIC10F206-IOT" description="512W Flash, 24B SRAM, SOT-23-6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61859C20</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6185A15E</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>47</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6185A482</tstamp>
+    </comp>
+    <comp ref="T1">
+      <value>B82801A150</value>
+      <footprint>My-library:B82801A1</footprint>
+      <libsource lib="PS400-4-rescue" part="B82801A1-My_Library" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6185A86F</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRLML6346</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6185B1E9</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>RS1JL</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6185B902</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MCP1700-3002E</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="MCP1700-3002E_SOT23" description="250mA Low Quiscent Current LDO, 3.0V output, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6185D62A</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>RS1JL</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6186223A</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>RS1JL</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="D" description="Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61862636</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6186518A</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_1812_4532Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6186558C</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61877109</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>618779C3</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>5G</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6187C5ED</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61881E72</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>22uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61888A8D</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>30M*</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6188C9F1</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn</value>
+      <footprint>My-library:SMD-CONN</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="PS400-4-rescue" part="Conn-My_Library" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6189986E</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>4.7M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6189AD72</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn</value>
+      <footprint>My-library:SMD-CONN</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="PS400-4-rescue" part="Conn-My_Library" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6189B2E9</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>4.7M</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6189B7D6</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn</value>
+      <footprint>My-library:SMD-CONN</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="PS400-4-rescue" part="Conn-My_Library" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B9B598</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61B88C26</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D">
+      <description>Diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_GSD">
+      <description>N-MOSFET transistor, gate/source/drain</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GSD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Microchip_PIC10" part="PIC10F204-IOT">
+      <aliases>
+        <alias>PIC10F206-IOT</alias>
+      </aliases>
+      <description>256W Flash, 16B SRAM, SOT-23-6</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/41239D.pdf</docs>
+      <footprints>
+        <fp>SOT*23*6*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PIC10F204-IOT</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GP0" type="BiDi"/>
+        <pin num="2" name="VSS" type="power_in"/>
+        <pin num="3" name="GP1" type="BiDi"/>
+        <pin num="4" name="GP2" type="BiDi"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="GP3" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="PS400-4-rescue" part="B82801A1-My_Library">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">B82801A1-My_Library</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="PS400-4-rescue" part="Conn-My_Library">
+      <footprints>
+        <fp>Connector*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn-My_Library</field>
+        <field name="Footprint">My-library:SMD-CONN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="MCP1700-3002E_SOT23">
+      <aliases>
+        <alias>MCP1700-1202E_SOT23</alias>
+        <alias>MCP1700-1802E_SOT23</alias>
+        <alias>MCP1700-2502E_SOT23</alias>
+        <alias>MCP1700-2802E_SOT23</alias>
+        <alias>MCP1700-3302E_SOT23</alias>
+        <alias>MCP1700-5002E_SOT23</alias>
+      </aliases>
+      <description>250mA Low Quiscent Current LDO, 3.0V output, SOT-23</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP1700-3002E_SOT23</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="MCU_Microchip_PIC10">
+      <uri>/usr/share/kicad/library/MCU_Microchip_PIC10.lib</uri>
+    </library>
+    <library logical="PS400-4-rescue">
+      <uri>/home/ed/work/kicad/PS400-4/PS400-4-rescue.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/usr/share/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C7-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="U1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C1-Pad1)">
+      <node ref="D3" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="4" name="Net-(C1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="T1" pin="1"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="5" name="Net-(C5-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="6" name="Net-(Q1-Pad3)">
+      <node ref="T1" pin="3"/>
+      <node ref="T1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="7" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="T1" pin="4"/>
+    </net>
+    <net code="8" name="+3V3">
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U2" pin="5"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="9" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="10" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="11" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="12" name="Net-(J2-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="13" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="14" name="Net-(C2-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="15" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,33 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/home/ed/work/kicad/PS400-4/PS400-4.sch</h1>
+    <p>Пт 17 дек 2021 17:40:11</p>
+    <p>Eeschema 5.1.9+dfsg1-1~bpo10+1</p>
+    <p><b>Component Count:</b>23</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1, C5, C6</td><td>3</td><td>10n</td><td>Device:C</td><td>Capacitor_SMD:C_1812_4532Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C2, C3, C4</td><td>3</td><td>22uF</td><td>Device:C</td><td>Capacitor_SMD:C_0805_2012Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C7</td><td>1</td><td>100</td><td>Device:C</td><td>Capacitor_SMD:C_0603_1608Metric</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D1, D2, D3</td><td>3</td><td>RS1JL</td><td>Device:D</td><td>Diode_SMD:D_SOD-123</td><td>Diode</td><td></td></tr>
+    <tr><td>J1, J2, J3</td><td>3</td><td>Conn</td><td>PS400-4-rescue:Conn-My_Library</td><td>My-library:SMD-CONN</td><td></td><td></td></tr>
+    <tr><td>Q1</td><td>1</td><td>IRLML6346</td><td>Device:Q_NMOS_GSD</td><td>Package_TO_SOT_SMD:SOT-23</td><td>N-MOSFET transistor, gate/source/drain</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>47</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2, R3</td><td>2</td><td>4.7M</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R4</td><td>1</td><td>30M*</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R5</td><td>1</td><td>5G</td><td>Device:R</td><td>Resistor_SMD:R_2512_6332Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>R6</td><td>1</td><td>100k</td><td>Device:R</td><td>Resistor_SMD:R_0603_1608Metric</td><td>Resistor</td><td></td></tr>
+    <tr><td>T1</td><td>1</td><td>B82801A150</td><td>PS400-4-rescue:B82801A1-My_Library</td><td>My-library:B82801A1</td><td></td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>MCP1700-3002E</td><td>Regulator_Linear:MCP1700-3002E_SOT23</td><td>Package_TO_SOT_SMD:SOT-23</td><td>250mA Low Quiscent Current LDO, 3.0V output, SOT-23</td><td></td></tr>
+    <tr><td>U2</td><td>1</td><td>PIC10F206-IOT</td><td>MCU_Microchip_PIC10:PIC10F206-IOT</td><td>Package_TO_SOT_SMD:SOT-23-6</td><td>512W Flash, 24B SRAM, SOT-23-6</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

@@ -1,0 +1,40 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# B82801A1-My_Library
+#
+DEF B82801A1-My_Library D 0 40 Y Y 1 F N
+F0 "D" 0 0 50 H V C CNN
+F1 "B82801A1-My_Library" 0 650 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -117 283 6 0 1 0 N
+C 117 71 6 0 1 0 N
+S -100 300 -50 50 0 1 0 F
+S 0 300 0 50 0 1 0 N
+S 100 300 50 50 0 1 0 F
+X ~ 1 -200 300 100 R 50 50 1 1 I
+X ~ 2 -200 50 100 R 50 50 1 1 I
+X ~ 3 200 50 100 L 50 50 1 1 I
+X ~ 4 200 300 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Conn-My_Library
+#
+DEF Conn-My_Library J 0 40 N N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Conn-My_Library" 0 -100 50 H V C CNN
+F2 "My-library:SMD-CONN" 50 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+X ~ 1 -100 0 79 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
