@@ -1,0 +1,30 @@
+[p LITE_MODE AUTOSTATIC PIC12 PICREGULAR PIC12COM ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 10F206 ]
+[d frameptr 6 ]
+"62 /opt/microchip/xc8/v1.36/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 /opt/microchip/xc8/v1.36/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"16 /home/ed/work/PIC/PowerSuply/newmain.c
+[v _main main `(v  1 e 1 0 ]
+"198 /opt/microchip/xc8/v1.36/include/pic10f206.h
+[v _OSCCAL OSCCAL `VEuc  1 e 1 @5 ]
+"305
+[v _CMCON0 CMCON0 `VEuc  1 e 1 @7 ]
+"366
+[v _OPTION OPTION `VEWuc  1 e 1 @0 ]
+"372
+[v _TRISGPIO TRISGPIO `VEWuc  1 e 1 @6 ]
+"412
+[v _CMPOUT CMPOUT `VEb  1 e 0 @63 ]
+"428
+[v _GP2 GP2 `VEb  1 e 0 @50 ]
+"16 /home/ed/work/PIC/PowerSuply/newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"28
+[v main@i i `i  1 a 2 0 ]
+"35
+} 0

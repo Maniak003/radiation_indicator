@@ -1,0 +1,256 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[p mainexit ]
+"198 /opt/microchip/xc8/v1.36/include/pic10f206.h
+[v _OSCCAL `Vuc ~T0 @X0 0 e@5 ]
+"366
+[v _OPTION `VWuc ~T0 @X0 0 e@0 ]
+"372
+[v _TRISGPIO `VWuc ~T0 @X0 0 e@6 ]
+"428
+[v _GP2 `Vb ~T0 @X0 0 e@50 ]
+"430
+[v _GP3 `Vb ~T0 @X0 0 e@51 ]
+"305
+[v _CMCON0 `Vuc ~T0 @X0 0 e@7 ]
+"8 newmain.c
+[p x WDTE=OFF ]
+"9
+[p x CP=OFF ]
+"10
+[p x MCLRE=OFF ]
+[; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
+[; ;htc.h: 28: extern double __fpnormalize(double);
+[; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
+[; ;pic10f206.h: 49: extern volatile unsigned char INDF @ 0x000;
+"51 /opt/microchip/xc8/v1.36/include/pic10f206.h
+[; ;pic10f206.h: 51: asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+[; ;pic10f206.h: 54: typedef union {
+[; ;pic10f206.h: 55: struct {
+[; ;pic10f206.h: 56: unsigned INDF :8;
+[; ;pic10f206.h: 57: };
+[; ;pic10f206.h: 58: } INDFbits_t;
+[; ;pic10f206.h: 59: extern volatile INDFbits_t INDFbits @ 0x000;
+[; ;pic10f206.h: 68: extern volatile unsigned char TMR0 @ 0x001;
+"70
+[; ;pic10f206.h: 70: asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+[; ;pic10f206.h: 73: typedef union {
+[; ;pic10f206.h: 74: struct {
+[; ;pic10f206.h: 75: unsigned TMR0 :8;
+[; ;pic10f206.h: 76: };
+[; ;pic10f206.h: 77: } TMR0bits_t;
+[; ;pic10f206.h: 78: extern volatile TMR0bits_t TMR0bits @ 0x001;
+[; ;pic10f206.h: 87: extern volatile unsigned char PCL @ 0x002;
+"89
+[; ;pic10f206.h: 89: asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+[; ;pic10f206.h: 92: typedef union {
+[; ;pic10f206.h: 93: struct {
+[; ;pic10f206.h: 94: unsigned PCL :8;
+[; ;pic10f206.h: 95: };
+[; ;pic10f206.h: 96: } PCLbits_t;
+[; ;pic10f206.h: 97: extern volatile PCLbits_t PCLbits @ 0x002;
+[; ;pic10f206.h: 106: extern volatile unsigned char STATUS @ 0x003;
+"108
+[; ;pic10f206.h: 108: asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+[; ;pic10f206.h: 111: typedef union {
+[; ;pic10f206.h: 112: struct {
+[; ;pic10f206.h: 113: unsigned C :1;
+[; ;pic10f206.h: 114: unsigned DC :1;
+[; ;pic10f206.h: 115: unsigned Z :1;
+[; ;pic10f206.h: 116: unsigned nPD :1;
+[; ;pic10f206.h: 117: unsigned nTO :1;
+[; ;pic10f206.h: 118: unsigned :1;
+[; ;pic10f206.h: 119: unsigned CWUF :1;
+[; ;pic10f206.h: 120: unsigned GPWUF :1;
+[; ;pic10f206.h: 121: };
+[; ;pic10f206.h: 122: struct {
+[; ;pic10f206.h: 123: unsigned CARRY :1;
+[; ;pic10f206.h: 124: };
+[; ;pic10f206.h: 125: struct {
+[; ;pic10f206.h: 126: unsigned :2;
+[; ;pic10f206.h: 127: unsigned ZERO :1;
+[; ;pic10f206.h: 128: };
+[; ;pic10f206.h: 129: } STATUSbits_t;
+[; ;pic10f206.h: 130: extern volatile STATUSbits_t STATUSbits @ 0x003;
+[; ;pic10f206.h: 179: extern volatile unsigned char FSR @ 0x004;
+"181
+[; ;pic10f206.h: 181: asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+[; ;pic10f206.h: 184: typedef union {
+[; ;pic10f206.h: 185: struct {
+[; ;pic10f206.h: 186: unsigned FSR :8;
+[; ;pic10f206.h: 187: };
+[; ;pic10f206.h: 188: } FSRbits_t;
+[; ;pic10f206.h: 189: extern volatile FSRbits_t FSRbits @ 0x004;
+[; ;pic10f206.h: 198: extern volatile unsigned char OSCCAL @ 0x005;
+"200
+[; ;pic10f206.h: 200: asm("OSCCAL equ 05h");
+[; <" OSCCAL equ 05h ;# ">
+[; ;pic10f206.h: 203: typedef union {
+[; ;pic10f206.h: 204: struct {
+[; ;pic10f206.h: 205: unsigned FOSC4 :1;
+[; ;pic10f206.h: 206: unsigned CAL :7;
+[; ;pic10f206.h: 207: };
+[; ;pic10f206.h: 208: struct {
+[; ;pic10f206.h: 209: unsigned :1;
+[; ;pic10f206.h: 210: unsigned CAL0 :1;
+[; ;pic10f206.h: 211: unsigned CAL1 :1;
+[; ;pic10f206.h: 212: unsigned CAL2 :1;
+[; ;pic10f206.h: 213: unsigned CAL3 :1;
+[; ;pic10f206.h: 214: unsigned CAL4 :1;
+[; ;pic10f206.h: 215: unsigned CAL5 :1;
+[; ;pic10f206.h: 216: unsigned CAL6 :1;
+[; ;pic10f206.h: 217: };
+[; ;pic10f206.h: 218: } OSCCALbits_t;
+[; ;pic10f206.h: 219: extern volatile OSCCALbits_t OSCCALbits @ 0x005;
+[; ;pic10f206.h: 268: extern volatile unsigned char GPIO @ 0x006;
+"270
+[; ;pic10f206.h: 270: asm("GPIO equ 06h");
+[; <" GPIO equ 06h ;# ">
+[; ;pic10f206.h: 273: typedef union {
+[; ;pic10f206.h: 274: struct {
+[; ;pic10f206.h: 275: unsigned GP0 :1;
+[; ;pic10f206.h: 276: unsigned GP1 :1;
+[; ;pic10f206.h: 277: unsigned GP2 :1;
+[; ;pic10f206.h: 278: unsigned GP3 :1;
+[; ;pic10f206.h: 279: };
+[; ;pic10f206.h: 280: } GPIObits_t;
+[; ;pic10f206.h: 281: extern volatile GPIObits_t GPIObits @ 0x006;
+[; ;pic10f206.h: 305: extern volatile unsigned char CMCON0 @ 0x007;
+"307
+[; ;pic10f206.h: 307: asm("CMCON0 equ 07h");
+[; <" CMCON0 equ 07h ;# ">
+[; ;pic10f206.h: 310: typedef union {
+[; ;pic10f206.h: 311: struct {
+[; ;pic10f206.h: 312: unsigned nCWU :1;
+[; ;pic10f206.h: 313: unsigned CPREF :1;
+[; ;pic10f206.h: 314: unsigned CNREF :1;
+[; ;pic10f206.h: 315: unsigned CMPON :1;
+[; ;pic10f206.h: 316: unsigned nCMPT0CS :1;
+[; ;pic10f206.h: 317: unsigned POL :1;
+[; ;pic10f206.h: 318: unsigned nCOUTEN :1;
+[; ;pic10f206.h: 319: unsigned CMPOUT :1;
+[; ;pic10f206.h: 320: };
+[; ;pic10f206.h: 321: } CMCON0bits_t;
+[; ;pic10f206.h: 322: extern volatile CMCON0bits_t CMCON0bits @ 0x007;
+[; ;pic10f206.h: 366: extern volatile __control unsigned char OPTION @ 0x000;
+[; ;pic10f206.h: 369: extern volatile __control unsigned char TRIS @ 0x006;
+[; ;pic10f206.h: 372: extern volatile __control unsigned char TRISGPIO @ 0x006;
+[; ;pic10f206.h: 394: extern volatile __bit CAL0 @ (((unsigned) &OSCCAL)*8) + 1;
+[; ;pic10f206.h: 396: extern volatile __bit CAL1 @ (((unsigned) &OSCCAL)*8) + 2;
+[; ;pic10f206.h: 398: extern volatile __bit CAL2 @ (((unsigned) &OSCCAL)*8) + 3;
+[; ;pic10f206.h: 400: extern volatile __bit CAL3 @ (((unsigned) &OSCCAL)*8) + 4;
+[; ;pic10f206.h: 402: extern volatile __bit CAL4 @ (((unsigned) &OSCCAL)*8) + 5;
+[; ;pic10f206.h: 404: extern volatile __bit CAL5 @ (((unsigned) &OSCCAL)*8) + 6;
+[; ;pic10f206.h: 406: extern volatile __bit CAL6 @ (((unsigned) &OSCCAL)*8) + 7;
+[; ;pic10f206.h: 408: extern volatile __bit CARRY @ (((unsigned) &STATUS)*8) + 0;
+[; ;pic10f206.h: 410: extern volatile __bit CMPON @ (((unsigned) &CMCON0)*8) + 3;
+[; ;pic10f206.h: 412: extern volatile __bit CMPOUT @ (((unsigned) &CMCON0)*8) + 7;
+[; ;pic10f206.h: 414: extern volatile __bit CNREF @ (((unsigned) &CMCON0)*8) + 2;
+[; ;pic10f206.h: 416: extern volatile __bit CPREF @ (((unsigned) &CMCON0)*8) + 1;
+[; ;pic10f206.h: 418: extern volatile __bit CWUF @ (((unsigned) &STATUS)*8) + 6;
+[; ;pic10f206.h: 420: extern volatile __bit DC @ (((unsigned) &STATUS)*8) + 1;
+[; ;pic10f206.h: 422: extern volatile __bit FOSC4 @ (((unsigned) &OSCCAL)*8) + 0;
+[; ;pic10f206.h: 424: extern volatile __bit GP0 @ (((unsigned) &GPIO)*8) + 0;
+[; ;pic10f206.h: 426: extern volatile __bit GP1 @ (((unsigned) &GPIO)*8) + 1;
+[; ;pic10f206.h: 428: extern volatile __bit GP2 @ (((unsigned) &GPIO)*8) + 2;
+[; ;pic10f206.h: 430: extern volatile __bit GP3 @ (((unsigned) &GPIO)*8) + 3;
+[; ;pic10f206.h: 432: extern volatile __bit GPWUF @ (((unsigned) &STATUS)*8) + 7;
+[; ;pic10f206.h: 434: extern volatile __bit POL @ (((unsigned) &CMCON0)*8) + 5;
+[; ;pic10f206.h: 436: extern volatile __bit ZERO @ (((unsigned) &STATUS)*8) + 2;
+[; ;pic10f206.h: 438: extern volatile __bit nCMPT0CS @ (((unsigned) &CMCON0)*8) + 4;
+[; ;pic10f206.h: 440: extern volatile __bit nCOUTEN @ (((unsigned) &CMCON0)*8) + 6;
+[; ;pic10f206.h: 442: extern volatile __bit nCWU @ (((unsigned) &CMCON0)*8) + 0;
+[; ;pic10f206.h: 444: extern volatile __bit nPD @ (((unsigned) &STATUS)*8) + 3;
+[; ;pic10f206.h: 446: extern volatile __bit nTO @ (((unsigned) &STATUS)*8) + 4;
+[; ;pic.h: 28: extern void __nop(void);
+[; ;pic.h: 152: extern __nonreentrant void _delay(unsigned long);
+[; ;pic.h: 186: extern unsigned char __resetbits;
+[; ;pic.h: 187: extern __bit __powerdown;
+[; ;pic.h: 188: extern __bit __timeout;
+"16 newmain.c
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[; ;newmain.c: 16: void main(void) {
+[e :U _main ]
+[f ]
+[; ;newmain.c: 17: OSCCAL = 0x7e;
+"17
+[e = _OSCCAL -> -> 126 `i `uc ]
+[; ;newmain.c: 18: OPTION = 0xc0;
+"18
+[e = _OPTION -> -> 192 `i `uc ]
+[; ;newmain.c: 19: TRISGPIO = 0x01;
+"19
+[e = _TRISGPIO -> -> 1 `i `uc ]
+[; ;newmain.c: 20: GP2 = 0;
+"20
+[e = _GP2 -> -> 0 `i `b ]
+[; ;newmain.c: 21: GP3 = 0;
+"21
+[e = _GP3 -> -> 0 `i `b ]
+[; ;newmain.c: 22: CMCON0 = 0x08;
+"22
+[e = _CMCON0 -> -> 8 `i `uc ]
+[; ;newmain.c: 23: while(1) {
+"23
+[e :U 22 ]
+{
+[; ;newmain.c: 24: if ( (CMCON0 & 0x01000000b) == 0 ) {
+"24
+[e $ ! == & -> _CMCON0 `l -> 268435467 `l -> -> 0 `i `l 24  ]
+{
+[; ;newmain.c: 25: GP2 = 1;
+"25
+[e = _GP2 -> -> 1 `i `b ]
+[; ;newmain.c: 26: GP3 = 1;
+"26
+[e = _GP3 -> -> 1 `i `b ]
+[; ;newmain.c: 27: for(int i = 0; i < 50; i++);
+"27
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 50 `i 25  ]
+[e $U 26  ]
+[e :U 25 ]
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 50 `i 25  ]
+[e :U 26 ]
+}
+[; ;newmain.c: 28: GP2 = 0;
+"28
+[e = _GP2 -> -> 0 `i `b ]
+[; ;newmain.c: 29: GP3 = 0;
+"29
+[e = _GP3 -> -> 0 `i `b ]
+[; ;newmain.c: 30: for(int i = 0; i < 4000; i++);
+"30
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 4000 `i 28  ]
+[e $U 29  ]
+[e :U 28 ]
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4000 `i 28  ]
+[e :U 29 ]
+}
+"31
+}
+[e :U 24 ]
+"32
+}
+[e :U 21 ]
+"23
+[e $U 22  ]
+[e :U 23 ]
+[; ;newmain.c: 31: }
+[; ;newmain.c: 32: }
+[; ;newmain.c: 33: }
+"33
+[e :UE 20 ]
+}

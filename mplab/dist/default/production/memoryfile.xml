@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production/PowerSuply.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>512</length>
+      <used>47</used>
+      <free>465</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>24</length>
+      <used>6</used>
+      <free>18</free>
+    </memory>
+  </executable>
+</project>

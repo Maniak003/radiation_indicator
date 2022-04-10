@@ -1,0 +1,215 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/xcXNgIIlf.obj
+reset_wrap ENTRY 0 0 0 1 2
+reset_vec CODE 0 1FF 1FF 1 2
+end_init ENTRY 0 1 1 1 2
+config CONFIG 0 FFF FFF 1 2
+$dist/default/debug/PowerSuply.debug.obj
+cinit ENTRY 0 2 2 2 2
+maintext CODE 0 1A9 1A9 56 2
+cstackBANK0 BANK0 1 8 8 4 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM C-1B 1
+BANK0 C-1B 1
+ENTRY 4-FF 2
+IDLOC 200-203 2
+STACK C-1B 1
+CODE 4-1A8 2
+SFR0 0-7 1
+STRCODE 4-1A8 2
+STRING 4-FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug/PowerSuply.debug.obj
+2 cinit ENTRY >81:/tmp/xcXBAEkDv
+2 cinit ENTRY >84:/tmp/xcXBAEkDv
+2 cinit ENTRY >90:/tmp/xcXBAEkDv
+2 cinit ENTRY >92:/tmp/xcXBAEkDv
+3 cinit ENTRY >93:/tmp/xcXBAEkDv
+1A9 maintext CODE >16:/home/ed/work/PIC/PowerSuply/newmain.c
+1A9 maintext CODE >17:/home/ed/work/PIC/PowerSuply/newmain.c
+1AB maintext CODE >18:/home/ed/work/PIC/PowerSuply/newmain.c
+1AD maintext CODE >19:/home/ed/work/PIC/PowerSuply/newmain.c
+1AF maintext CODE >20:/home/ed/work/PIC/PowerSuply/newmain.c
+1B0 maintext CODE >21:/home/ed/work/PIC/PowerSuply/newmain.c
+1B1 maintext CODE >22:/home/ed/work/PIC/PowerSuply/newmain.c
+1B3 maintext CODE >24:/home/ed/work/PIC/PowerSuply/newmain.c
+1B7 maintext CODE >25:/home/ed/work/PIC/PowerSuply/newmain.c
+1B8 maintext CODE >26:/home/ed/work/PIC/PowerSuply/newmain.c
+1B9 maintext CODE >27:/home/ed/work/PIC/PowerSuply/newmain.c
+1E2 maintext CODE >28:/home/ed/work/PIC/PowerSuply/newmain.c
+1E3 maintext CODE >29:/home/ed/work/PIC/PowerSuply/newmain.c
+1E4 maintext CODE >30:/home/ed/work/PIC/PowerSuply/newmain.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 C 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+_TRISGPIO 6 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ltemp0 1C 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ltemp1 20 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ltemp2 24 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ltemp3 1E 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+main@i 8 0 BANK0 1 cstackBANK0 dist/default/debug/PowerSuply.debug.obj
+__Hstrings 0 0 STRING 0 strings -
+___sp 0 0 STACK 2 stack /tmp/xcXNgIIlf.obj
+_main 352 0 CODE 0 maintext dist/default/debug/PowerSuply.debug.obj
+btemp 1C 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ltemp 1C 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+start 2 0 ENTRY 0 init /tmp/xcXNgIIlf.obj
+ttemp 1C 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp 1C 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__Hpowerup 0 0 CODE 0 powerup -
+ttemp0 1C 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ttemp1 1F 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ttemp2 22 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ttemp3 25 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+ttemp4 1D 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp0 1C 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp1 1E 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp2 20 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp3 22 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp4 24 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp5 26 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+wtemp6 1D 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 8 0 ENTRY 0 clrtext -
+_CMCON0 7 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__Hjmp_tab 0 0 ABS 0 jmp_tab -
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+start_initialization 4 0 ENTRY 0 cinit dist/default/debug/PowerSuply.debug.obj
+_OPTION 0 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+_OSCCAL 5 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__pcstackBANK0 8 0 BANK0 1 cstackBANK0 dist/default/debug/PowerSuply.debug.obj
+___int_sp 0 0 STACK 2 stack /tmp/xcXNgIIlf.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hcinit 8 0 ENTRY 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 2000 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lcinit 4 0 ENTRY 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 2 0 ENTRY 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 2 0 ENTRY 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GP2 32 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+_GP3 33 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__S0 1000 0 ABS 0 - -
+__S1 C 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+reset_vec 3FE 0 CODE 0 reset_vec /tmp/xcXNgIIlf.obj
+__pmaintext 352 0 CODE 0 maintext dist/default/debug/PowerSuply.debug.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1FFE 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/debug/PowerSuply.debug.obj
+main@i_27 A 0 BANK0 1 cstackBANK0 dist/default/debug/PowerSuply.debug.obj
+stackhi 0 0 ABS 0 - /tmp/xcXNgIIlf.obj
+stacklo 0 0 ABS 0 - /tmp/xcXNgIIlf.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 2 0 ENTRY 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 4 0 ENTRY 0 cinit dist/default/debug/PowerSuply.debug.obj
+__Lstrings 0 0 STRING 0 strings -
+__Hreset_vec 400 0 CODE 0 reset_vec -
+__Lpowerup 0 0 CODE 0 powerup -
+__Lreset_vec 3FE 0 CODE 0 reset_vec -
+__end_of__initialization 4 0 ENTRY 0 cinit dist/default/debug/PowerSuply.debug.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 8 0 ENTRY 0 clrtext -
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/debug/PowerSuply.debug.obj
+__Hreset_wrap 2 0 ENTRY 0 reset_wrap -
+__Hend_init 4 0 ENTRY 0 end_init -
+__end_of_main 3FE 0 CODE 0 maintext dist/default/debug/PowerSuply.debug.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__initialization 4 0 ENTRY 0 cinit dist/default/debug/PowerSuply.debug.obj
+__Ljmp_tab 0 0 ABS 0 jmp_tab -
+__Lreset_wrap 0 0 ENTRY 0 reset_wrap -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 1C 4
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+maintext 0 1A9 352 56 2
+cstackBANK0 1 8 8 4 1
+reset_wrap 0 0 0 4 2
+reset_vec 0 1FF 3FE 1 2
+config 0 FFF 1FFE 1 2
