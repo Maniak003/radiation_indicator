@@ -4,7 +4,7 @@
     <meta charset="utf-8">
   </head>
     <body class="logged-in env-production page-responsive page-blob" style="word-wrap: break-word;">
-      <p> Radiation indicator.</p>
+      <p> Radiation indicator. (The device is under development.)</p>
       <a href="https://github.com/Maniak003/radiation_indicator/wiki" rel="nofollow">
         <img src="https://github.com/Maniak003/radiation_indicator/blob/main/Documents/circuit.png" alt="Radiation indicator" style="max-width: 100%;">
       </a>
